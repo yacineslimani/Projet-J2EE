@@ -1,5 +1,7 @@
 package fr.uvsq.DAO.implementation;
 
+import java.util.List;
+
 import fr.uvsq.DAO.interfaces.DAOCategorie;
 import fr.uvsq.bean.Categorie;
 
@@ -16,6 +18,18 @@ public class DAOCategorieImplementation implements DAOCategorie {
 	}
 
 	public boolean update(Categorie nouveau) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Categorie> findAll(String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(Categorie nouveau) {
 		// TODO Auto-generated method stub
 		return false;
 	}
