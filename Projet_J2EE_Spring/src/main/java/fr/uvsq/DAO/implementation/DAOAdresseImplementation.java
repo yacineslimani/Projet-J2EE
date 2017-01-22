@@ -23,18 +23,7 @@ public class DAOAdresseImplementation extends CustomHibernateDaoSupport implemen
 	}
 
 	public boolean insert(Adresse nouveau) {
-		/*Transaction tx =null;
-		Session session = HibernateUtil.currentSession();
-		try{
-			tx =(Transaction) session.beginTransaction();
-			session.save(nouveau);
-			tx.commit();
-		}catch(HibernateException e){
-			tx.rollback();
-		}
-		return true;*/
 		getHibernateTemplate().save(nouveau);
-		
 		return true;
 	}
 	

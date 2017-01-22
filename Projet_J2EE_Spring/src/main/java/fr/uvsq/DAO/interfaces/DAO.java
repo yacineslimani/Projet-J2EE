@@ -6,4 +6,5 @@ public interface DAO <T>{
 	boolean insert (T nouveau);
 	boolean update(T nouveau);
 	
+	
 }
