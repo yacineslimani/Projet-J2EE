@@ -1,5 +1,7 @@
 package fr.uvsq.DAO.implementation;
 
+import java.util.List;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -33,6 +35,16 @@ public class DAOAdresseImplementation extends CustomHibernateDaoSupport implemen
 		return false;
 	}
 
-	
+	@Override
+	public List<Adresse> findAll(String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(Adresse nouveau) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 }
