@@ -10,13 +10,18 @@ import javax.persistence.ManyToOne;
 public class Produit {
 	@Id
 	@GeneratedValue
-	Long idProduit;
-	String libelle;
+	private Long idProduit;
+	private String libelle;
 	@ManyToOne 
 	@JoinColumn (name="idCategorie")
-	Categorie categorie;
-	int stock;
-	protected Produit(String libelle, Categorie categorie, int stock) {
+	private Categorie categorie;
+	private int stock;
+	
+	public Produit() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public  Produit(String libelle, Categorie categorie, int stock) {
 		super();
 		this.libelle = libelle;
 		this.categorie = categorie;
